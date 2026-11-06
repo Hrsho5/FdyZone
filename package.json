@@ -1,0 +1,11 @@
+{
+  "name": "food-zone-fullstack",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix server run fullstack",
+    "prebuild": "npm ci --prefix app",
+    "build": "npm --prefix app run build",
+    "build:backend": "npm ci --prefix server && npm --prefix server run build",
+    "lint": "npm --prefix app run lint"
+  }
+}
